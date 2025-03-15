@@ -2,11 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import CustomButton from './CustomButton';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Flag } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { cn } from '@/lib/utils';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
   
   // Handle scroll effect
   useEffect(() => {
@@ -21,6 +24,10 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'ru' : 'en');
+  };
   
   return (
     <header 
@@ -34,10 +41,22 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <a href="#about" className="nav-link">About us</a>
-            <a href="#support" className="nav-link">Support</a>
-            <a href="#help" className="nav-link">Want to help us?</a>
+            <a href="#about" className="nav-link">{t('aboutUs')}</a>
+            <a href="#support" className="nav-link">{t('support')}</a>
+            <a href="#help" className="nav-link">{t('wantToHelp')}</a>
           </nav>
+          
+          {/* Language Selector */}
+          <button 
+            onClick={toggleLanguage}
+            className={cn(
+              "flex items-center gap-2 px-3 py-1 rounded-md transition-colors",
+              isScrolled ? "bg-secondary/50 hover:bg-secondary" : "bg-white/20 hover:bg-white/30"
+            )}
+          >
+            <Flag size={18} />
+            <span className="font-medium">{language.toUpperCase()}</span>
+          </button>
           
           {/* Mobile Menu Button */}
           <button 
@@ -59,22 +78,29 @@ const Navbar = () => {
               className="px-4 py-2 text-lg text-foreground hover:bg-secondary rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              About us
+              {t('aboutUs')}
             </a>
             <a 
               href="#support" 
               className="px-4 py-2 text-lg text-foreground hover:bg-secondary rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Support
+              {t('support')}
             </a>
             <a 
               href="#help" 
               className="px-4 py-2 text-lg text-foreground hover:bg-secondary rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Want to help us?
+              {t('wantToHelp')}
             </a>
+            <button 
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 px-4 py-2 text-lg text-foreground hover:bg-secondary rounded-md"
+            >
+              <Flag size={18} />
+              <span className="font-medium">{language === 'en' ? 'English' : 'Русский'}</span>
+            </button>
           </div>
         </div>
       )}

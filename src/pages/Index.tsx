@@ -4,11 +4,13 @@ import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import CustomButton from "@/components/CustomButton";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Index = () => {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const subheadingRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
   
   useEffect(() => {
     // Apply staggered animations
@@ -61,15 +63,14 @@ const Index = () => {
             ref={headingRef}
             className="text-4xl md:text-6xl font-bold tracking-tight text-foreground transition-all duration-700 ease-out"
           >
-            Exploring the Math Behind Beautiful Visuals
+            {t('heroTitle')}
           </h1>
           
           <p 
             ref={subheadingRef}
             className="mt-6 text-lg md:text-xl text-muted-foreground transition-all duration-700 ease-out"
           >
-            Welcome to the community of math enthusiasts and shader artists. 
-            Dive into the world where algorithms create beauty.
+            {t('heroSubtitle')}
           </p>
           
           <div 
@@ -81,7 +82,7 @@ const Index = () => {
               size="lg"
               className="group"
             >
-              <span>READ</span>
+              <span>{t('readButton')}</span>
               <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </CustomButton>
           </div>
@@ -90,7 +91,7 @@ const Index = () => {
       
       <footer className="py-8 text-center text-sm text-muted-foreground">
         <div className="container mx-auto px-4">
-          <p>© {new Date().getFullYear()} ShaderMath. All rights reserved.</p>
+          <p>{t('copyright').replace('{year}', new Date().getFullYear().toString())}</p>
         </div>
       </footer>
     </div>
