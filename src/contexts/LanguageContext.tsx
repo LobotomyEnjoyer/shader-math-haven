@@ -34,6 +34,7 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (language: Language) => void;
   t: (key: string) => string;
+  getCountryFlag: () => React.ReactNode;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -45,8 +46,13 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     return translations[language][key] || key;
   };
 
+  // Function to get the appropriate country flag based on the selected language
+  const getCountryFlag = () => {
+    return language === 'en' ? 'US' : 'RU';
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, getCountryFlag }}>
       {children}
     </LanguageContext.Provider>
   );

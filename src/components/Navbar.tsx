@@ -2,14 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import CustomButton from './CustomButton';
-import { Menu, X, Flag } from 'lucide-react';
+import { Menu, X, FlagTriangleRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { language, setLanguage, t } = useLanguage();
+  const { language, setLanguage, t, getCountryFlag } = useLanguage();
   
   // Handle scroll effect
   useEffect(() => {
@@ -53,9 +53,10 @@ const Navbar = () => {
               "flex items-center gap-2 px-3 py-1 rounded-md transition-colors",
               isScrolled ? "bg-secondary/50 hover:bg-secondary" : "bg-white/20 hover:bg-white/30"
             )}
+            aria-label={`Change language to ${language === 'en' ? 'Russian' : 'English'}`}
           >
-            <Flag size={18} />
-            <span className="font-medium">{language.toUpperCase()}</span>
+            <FlagTriangleRight size={18} className={language === 'en' ? 'text-blue-600' : 'text-red-600'} />
+            <span className="font-medium">{getCountryFlag()}</span>
           </button>
           
           {/* Mobile Menu Button */}
@@ -98,8 +99,8 @@ const Navbar = () => {
               onClick={toggleLanguage}
               className="flex items-center gap-2 px-4 py-2 text-lg text-foreground hover:bg-secondary rounded-md"
             >
-              <Flag size={18} />
-              <span className="font-medium">{language === 'en' ? 'English' : 'Русский'}</span>
+              <FlagTriangleRight size={18} className={language === 'en' ? 'text-blue-600' : 'text-red-600'} />
+              <span className="font-medium">{language === 'en' ? 'English (US)' : 'Русский (RU)'}</span>
             </button>
           </div>
         </div>
