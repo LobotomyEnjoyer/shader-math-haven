@@ -34,7 +34,7 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <a href="#topics" className="nav-link">Topics</a>
+            <a href="#about" className="nav-link">About us</a>
             <a href="#support" className="nav-link">Support</a>
             <a href="#help" className="nav-link">Want to help us?</a>
           </nav>
@@ -55,11 +55,11 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-lg animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <a 
-              href="#topics" 
+              href="#about" 
               className="px-4 py-2 text-lg text-foreground hover:bg-secondary rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Topics
+              About us
             </a>
             <a 
               href="#support" 
