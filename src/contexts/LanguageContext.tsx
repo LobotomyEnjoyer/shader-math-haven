@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 interface TranslationValues {
@@ -28,8 +27,8 @@ const translations: Record<string, TranslationValues> = {
     support: 'Support',
     wantToHelp: 'Want to Help',
     back: 'Back',
-    heroTitle: 'Learn and Explore Topics',
-    heroSubtitle: 'Discover interesting information and educational content',
+    heroTitle: 'Math and Shaders',
+    heroSubtitle: 'Explore mathematics and shader examples for computer graphics',
     readButton: 'Start Reading',
     copyright: '© {year} All Rights Reserved',
     relatedTopics: 'Related Topics'
@@ -43,8 +42,8 @@ const translations: Record<string, TranslationValues> = {
     support: 'Поддержка',
     wantToHelp: 'Хочу помочь',
     back: 'Назад',
-    heroTitle: 'Изучайте и исследуйте темы',
-    heroSubtitle: 'Откройте для себя интересную информацию и образовательный контент',
+    heroTitle: 'Математика и Шейдеры',
+    heroSubtitle: 'Изучайте математические и шейдерные примеры для компьютерной графики',
     readButton: 'Начать чтение',
     copyright: '© {year} Все права защищены',
     relatedTopics: 'Связанные темы'
