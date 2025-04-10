@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useTopics } from '@/contexts/TopicsContext';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Plus, ChevronRight } from 'lucide-react';
+import { Plus, ChevronRight, Menu } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Button } from '@/components/ui/button';
 import { Separator } from "@/components/ui/separator";
@@ -27,27 +27,21 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
   return (
     <div 
       className={`fixed top-0 left-0 h-full bg-magenta/70 backdrop-blur-sm transition-all duration-300 ease-out ${
-        isHovered ? 'w-64' : 'w-1'
+        isHovered ? 'w-64' : 'w-8'
       } shadow-lg z-40`}
       onMouseEnter={() => !isMobile && setIsHovered(true)}
       onMouseLeave={() => !isMobile && setIsHovered(false)}
       onClick={isMobile ? togglePanel : undefined}
     >
-      {/* Content tag */}
+      {/* Collapsed state indicator */}
       <div 
         className={`absolute top-4 -right-8 transform -rotate-90 origin-top-left text-white text-sm transition-opacity duration-300 ${
-          isHovered ? 'opacity-0' : 'opacity-100'
+          isHovered ? 'opacity-0' : 'opacity-100 flex items-center gap-2'
         }`}
       >
-        <div className="flex items-center gap-1">
-          <span>{t('content')}</span>
-          <ChevronRight size={16} />
-        </div>
-        {!isHovered && !isMobile && (
-          <div className="text-xs text-white/70 mt-1">
-            {t('hoverToOpen')}
-          </div>
-        )}
+        <Menu size={16} />
+        <span className="text-xs">{t('content')}</span>
+        <span className="text-xs text-white/70 ml-2">{t('hoverToOpen')}</span>
       </div>
 
       <div className={`h-full transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
@@ -89,7 +83,7 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
         </div>
       </div>
       
-      {/* Show a hint when collapsed */}
+      {/* Thin line when collapsed */}
       <div 
         className={`absolute top-0 left-0 h-full w-1 bg-magenta transition-opacity duration-300 ${
           isHovered ? 'opacity-0' : 'opacity-100'
