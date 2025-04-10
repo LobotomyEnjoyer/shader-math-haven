@@ -4,6 +4,7 @@ import { useTopics } from '@/contexts/TopicsContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Card, CardContent } from '@/components/ui/card';
+import MathFormula from '@/components/MathFormula';
 
 const MainPanel: React.FC = () => {
   const { selectedTopic } = useTopics();
@@ -44,6 +45,26 @@ const MainPanel: React.FC = () => {
               The power of mathematics in computer graphics is undeniable. From simple coordinate transformations 
               to complex differential equations, math provides the tools to create stunning visual effects.
             </p>
+            
+            {/* Example LaTeX formula */}
+            <div className="my-4">
+              <h4 className="text-lg font-medium mb-2">Vector Normalization:</h4>
+              <MathFormula 
+                formula="\hat{v} = \frac{v}{||v||} = \frac{v}{\sqrt{v_x^2 + v_y^2 + v_z^2}}" 
+                displayMode={true}
+                className="py-2" 
+              />
+            </div>
+            
+            {/* Another example LaTeX formula */}
+            <div className="my-4">
+              <h4 className="text-lg font-medium mb-2">Dot Product:</h4>
+              <MathFormula 
+                formula="a \cdot b = ||a|| \, ||b|| \cos(\theta) = a_x b_x + a_y b_y + a_z b_z" 
+                displayMode={true}
+                className="py-2" 
+              />
+            </div>
             
             <div className="my-6 p-4 bg-gray-200 rounded-md overflow-x-auto">
               <code>
