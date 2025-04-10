@@ -1,7 +1,24 @@
 
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
-const translations = {
+interface TranslationValues {
+  topics: string;
+  content: string;
+  hoverToOpen: string;
+  addTopic: string;
+  aboutUs: string;
+  support: string;
+  wantToHelp: string;
+  back: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  readButton: string;
+  copyright: string;
+  relatedTopics: string;
+  [key: string]: string; // Add index signature to support dynamic keys
+}
+
+const translations: Record<string, TranslationValues> = {
   en: {
     topics: 'Topics',
     content: 'Content',
@@ -35,12 +52,12 @@ const translations = {
 };
 
 type Language = keyof typeof translations;
-type TranslationKey = keyof (typeof translations)['en'];
+type TranslationKey = keyof TranslationValues;
 
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: TranslationKey) => string;
+  t: (key: string) => string; // Changed to accept any string key
   getCountryFlag: () => string;
 }
 
@@ -49,8 +66,9 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
 
-  const t = (key: TranslationKey) => {
-    return translations[language][key];
+  const t = (key: string) => {
+    // Return the key itself as fallback if translation is not found
+    return translations[language][key] || key;
   };
 
   const getCountryFlag = () => {
