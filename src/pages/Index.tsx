@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import CustomButton from "@/components/CustomButton";
 import AnimatedBackground from "@/components/AnimatedBackground";
@@ -77,14 +78,16 @@ const Index = () => {
             ref={buttonRef}
             className="mt-10 transition-all duration-700 ease-out"
           >
-            <CustomButton 
-              variant="primary" 
-              size="lg"
-              className="group"
-            >
-              <span>{t('readButton')}</span>
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </CustomButton>
+            <Link to="/topics">
+              <CustomButton 
+                variant="primary" 
+                size="lg"
+                className="group"
+              >
+                <span>{t('readButton')}</span>
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </CustomButton>
+            </Link>
           </div>
         </div>
       </main>
