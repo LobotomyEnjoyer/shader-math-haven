@@ -33,8 +33,8 @@ const translations: Record<string, TranslationValues> = {
     copyright: '© {year} All Rights Reserved',
     relatedTopics: 'Related Topics',
     Shaders: 'Shaders',
-    'Linear Algebra': 'Linear Algebra',
-    'Color Space': 'Color Space'
+    linearAlgebra: 'Linear Algebra',
+    colorTheory: 'Color Space'
   },
   ru: {
     topics: 'Темы',
@@ -51,8 +51,8 @@ const translations: Record<string, TranslationValues> = {
     copyright: '© {year} Все права защищены',
     relatedTopics: 'Связанные темы',
     Shaders: 'Шейдеры',
-    'Linear Algebra': 'Линейная алгебра',
-    'Color Space': 'Цветовое пространство'
+    linearAlgebra: 'Линейная алгебра',
+    colorTheory: 'Цветовое пространство'
   }
 };
 
