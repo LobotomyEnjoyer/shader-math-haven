@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useTopics } from '@/contexts/TopicsContext';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -41,7 +40,7 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
       >
         <div className="flex flex-col items-start space-y-1">
           <div className="flex items-center gap-2">
-            <Menu size={16} />
+            <Menu size={16} color="black" />
             <span className="text-xs text-black whitespace-nowrap">{t('content')}</span>
           </div>
           <span className="text-xs text-black/70 whitespace-nowrap">{t('hoverToOpen')}</span>
