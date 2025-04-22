@@ -31,7 +31,10 @@ const translations: Record<string, TranslationValues> = {
     heroSubtitle: 'Explore mathematics and shader examples for computer graphics',
     readButton: 'Start Reading',
     copyright: '© {year} All Rights Reserved',
-    relatedTopics: 'Related Topics'
+    relatedTopics: 'Related Topics',
+    Shaders: 'Shaders',
+    'Linear Algebra': 'Linear Algebra',
+    'Color Space': 'Color Space'
   },
   ru: {
     topics: 'Темы',
@@ -46,7 +49,10 @@ const translations: Record<string, TranslationValues> = {
     heroSubtitle: 'Изучайте математические и шейдерные примеры для компьютерной графики',
     readButton: 'Начать чтение',
     copyright: '© {year} Все права защищены',
-    relatedTopics: 'Связанные темы'
+    relatedTopics: 'Связанные темы',
+    Shaders: 'Шейдеры',
+    'Linear Algebra': 'Линейная алгебра',
+    'Color Space': 'Цветовое пространство'
   }
 };
 
