@@ -21,7 +21,7 @@ const translations: Record<string, TranslationValues> = {
   en: {
     topics: 'Topics',
     content: 'Content',
-    hoverToOpen: 'Hover to open',
+    hoverToOpen: 'Hover/click to open',
     addTopic: 'Add Topic',
     aboutUs: 'About Us',
     support: 'Support',
@@ -36,7 +36,7 @@ const translations: Record<string, TranslationValues> = {
   ru: {
     topics: 'Темы',
     content: 'Содержание',
-    hoverToOpen: 'Наведите для открытия',
+    hoverToOpen: 'Наведитесь/кликните для открытия',
     addTopic: 'Добавить тему',
     aboutUs: 'О нас',
     support: 'Поддержка',
