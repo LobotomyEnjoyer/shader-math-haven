@@ -41,7 +41,7 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
       >
         <Menu size={16} />
         <span className="text-xs">{t('content')}</span>
-        <span className="text-xs text-white/70 ml-2">{t('hoverToOpen')}</span>
+        <span className="text-xs text-black/70 ml-2">{t('hoverToOpen')}</span>
       </div>
 
       <div className={`h-full transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
