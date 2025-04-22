@@ -32,18 +32,18 @@ const TopicsContext = createContext<TopicsContextType | undefined>(undefined);
 const initialTopics: Topic[] = [
   {
     id: 'shaders',
-    titleKey: 'Shaders',
+    titleKey: 'shaders',
     contentKey: 'shadersContent',
     imageUrl: '/lovable-uploads/66975d7e-d368-4983-8083-c804b86dffb6.png'
   },
   {
     id: 'linear-algebra',
-    titleKey: 'Linear Algebra',
+    titleKey: 'linearAlgebra',
     contentKey: 'linearAlgebraContent'
   },
   {
     id: 'color-theory',
-    titleKey: 'Color Space',
+    titleKey: 'colorTheory',
     contentKey: 'colorTheoryContent'
   }
 ];
