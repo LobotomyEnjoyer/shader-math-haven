@@ -35,13 +35,17 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
     >
       {/* Collapsed state indicator */}
       <div 
-        className={`absolute top-4 -right-24 transform text-white text-sm transition-opacity duration-300 ${
-          isHovered ? 'opacity-0' : 'opacity-100 flex items-center gap-2'
+        className={`absolute top-16 left-8 transform text-white transition-opacity duration-300 ${
+          isHovered ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        <Menu size={16} />
-        <span className="text-xs whitespace-nowrap">{t('content')}</span>
-        <span className="text-xs text-black/70 whitespace-nowrap">{t('hoverToOpen')}</span>
+        <div className="flex flex-col items-start space-y-1">
+          <div className="flex items-center gap-2">
+            <Menu size={16} />
+            <span className="text-xs whitespace-nowrap">{t('content')}</span>
+          </div>
+          <span className="text-xs text-black/70 whitespace-nowrap">{t('hoverToOpen')}</span>
+        </div>
       </div>
 
       {/* Main content */}
