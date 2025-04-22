@@ -34,7 +34,8 @@ const translations: Record<string, TranslationValues> = {
     relatedTopics: 'Related Topics',
     shaders: 'Shaders',
     linearAlgebra: 'Linear Algebra',
-    colorTheory: 'Color Space'
+    colorTheory: 'Color Space',
+    shadersContent: "About shaders"
   },
   ru: {
     topics: 'Темы',
