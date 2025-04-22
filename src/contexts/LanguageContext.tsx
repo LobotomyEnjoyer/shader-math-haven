@@ -32,7 +32,7 @@ const translations: Record<string, TranslationValues> = {
     readButton: 'Start Reading',
     copyright: '© {year} All Rights Reserved',
     relatedTopics: 'Related Topics',
-    Shaders: 'Shaders',
+    shaders: 'Shaders',
     linearAlgebra: 'Linear Algebra',
     colorTheory: 'Color Space'
   },
@@ -50,7 +50,7 @@ const translations: Record<string, TranslationValues> = {
     readButton: 'Начать чтение',
     copyright: '© {year} Все права защищены',
     relatedTopics: 'Связанные темы',
-    Shaders: 'Шейдеры',
+    shaders: 'Шейдеры',
     linearAlgebra: 'Линейная алгебра',
     colorTheory: 'Цветовое пространство'
   }
