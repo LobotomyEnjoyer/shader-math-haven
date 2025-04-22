@@ -40,7 +40,7 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
         }`}
       >
         <Menu size={16} />
-        <span className="text-xs whitespace-nowrap/70">{t('content')}</span>
+        <span className="text-xs whitespace-nowrap">{t('content')}</span>
         <span className="text-xs text-black/70 whitespace-nowrap">{t('hoverToOpen')}</span>
       </div>
 
