@@ -99,7 +99,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
   };
 
   return (
-    <Card className="w-full bg-gray-100 rounded-lg shadow-md overflow-scroll">
+    <Card className="w-full bg-gray-100 rounded-lg shadow-md overflow-auto">
       <ScrollArea className="h-[calc(100vh-140px)]">
         <CardContent className="p-6">
           <div className="prose prose-gray max-w-none">
