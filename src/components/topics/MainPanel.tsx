@@ -1,40 +1,40 @@
+
 import React from 'react';
 import { useTopics } from '@/contexts/TopicsContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Card, CardContent } from '@/components/ui/card';
 import MathFormula from '@/components/MathFormula';
+
 const MainPanel: React.FC = () => {
-  const {
-    selectedTopic
-  } = useTopics();
-  const {
-    t
-  } = useLanguage();
+  const { selectedTopic } = useTopics();
+  const { t } = useLanguage();
+
   if (!selectedTopic) return null;
 
   // Helper function to render content based on topic ID
   const renderTopicContent = () => {
     switch (selectedTopic.id) {
       case 'shaders':
-        return <>
+        return (
+          <>
             {/* Example of how to include a local image:
-             import shaderImage from '@/imgs/shader-example.png';
-             <img 
+            import shaderImage from '@/imgs/shader-example.png';
+            <img 
               src={shaderImage} 
               alt="Shader Example"
               className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"
-             /> 
-             */}
+            /> 
+            */}
             
             {/* Example of how to include a URL-based image:
-             <img 
+            <img 
               src="https://images.unsplash.com/photo-example"
               alt="Shader visualization"
               className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"
               style={{ objectFit: 'cover' }}
-             /> 
-             */}
+            /> 
+            */}
             
             <h2 className="text-2xl font-bold mb-4">{t('shadersTitle')}</h2>
             <p className="mb-4">{t('shadersContent')}</p>
@@ -42,26 +42,35 @@ const MainPanel: React.FC = () => {
             {/* Add shader-specific content here */}
             <div className="bg-gray-100 p-4 rounded-md">
               <code>
-                <pre className="Put code block in a rectangle with round corners and enable text highlighting for GLSL language (usually it's a C or C++ syntax highlighting). background color of the code space is \u044B\u0435\u0449\u0442\u0443-950.">{`// Example GLSL shader
+                <pre>{`// Example GLSL shader
 void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec2 uv = fragCoord/iResolution.xy;
     fragColor = vec4(uv.x, uv.y, 0.5, 1.0);
 }`}</pre>
               </code>
             </div>
-          </>;
+          </>
+        );
+        
       case 'linear-algebra':
-        return <>
+        return (
+          <>
             <h2 className="text-2xl font-bold mb-4">{t('linearAlgebraTitle')}</h2>
             <p className="mb-4">{t('linearAlgebraContent')}</p>
             
             {/* Example of mathematics formula */}
             <div className="my-4">
-              <MathFormula formula="\begin{bmatrix} x' \\ y' \\ z' \end{bmatrix} = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix}" displayMode={true} />
+              <MathFormula 
+                formula="\begin{bmatrix} x' \\ y' \\ z' \end{bmatrix} = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix}"
+                displayMode={true}
+              />
             </div>
-          </>;
+          </>
+        );
+        
       case 'color-theory':
-        return <>
+        return (
+          <>
             <h2 className="text-2xl font-bold mb-4">{t('colorTheoryTitle')}</h2>
             <p className="mb-4">{t('colorTheoryContent')}</p>
             
@@ -71,14 +80,20 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               <div className="bg-yellow-500 h-20 rounded-md flex items-center justify-center text-white">HSL</div>
               <div className="bg-blue-500 h-20 rounded-md flex items-center justify-center text-white">CMYK</div>
             </div>
-          </>;
+          </>
+        );
+        
       default:
-        return <div className="text-center text-gray-500">
+        return (
+          <div className="text-center text-gray-500">
             <p>Select a topic from the navigation panel</p>
-          </div>;
+          </div>
+        );
     }
   };
-  return <Card className="w-full bg-gray-100 rounded-lg shadow-md overflow-hidden">
+
+  return (
+    <Card className="w-full bg-gray-100 rounded-lg shadow-md overflow-hidden">
       <ScrollArea className="h-[calc(100vh-140px)]">
         <CardContent className="p-6">
           <div className="prose prose-gray max-w-none">
@@ -86,6 +101,8 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
           </div>
         </CardContent>
       </ScrollArea>
-    </Card>;
+    </Card>
+  );
 };
+
 export default MainPanel;
