@@ -15,6 +15,7 @@ const MainPanel: React.FC = () => {
   // Helper function to render content based on topic ID
   const renderTopicContent = () => {
     switch (selectedTopic.id) {
+      /* Content for shaders */
       case 'shaders':
         return (
           <>
@@ -51,7 +52,9 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             </div>
           </>
         );
-        
+
+
+        /* Content for linear-algebra */
       case 'linear-algebra':
         return (
           <>
@@ -68,6 +71,9 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
           </>
         );
         
+
+
+        /* Content for color-theory */
       case 'color-theory':
         return (
           <>
