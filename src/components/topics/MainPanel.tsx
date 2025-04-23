@@ -41,9 +41,9 @@ const MainPanel: React.FC = () => {
             <p className="mb-4">{t('shadersContent')}</p>
             
             {/* Add shader-specific content here */}
-            <div className="bg-gray-100 p-4 rounded-md">
+            <div className="bg-gray-100 p-4 rounded-md overflow-x-auto">
               <code>
-                <pre>{`// Example GLSL shader
+                <pre className="whitespace-pre w-full">{`// Example GLSL shader
 void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec2 uv = fragCoord/iResolution.xy;
     fragColor = vec4(uv.x, uv.y, 0.5, 1.0);
