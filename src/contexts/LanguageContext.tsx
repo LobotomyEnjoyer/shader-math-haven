@@ -14,6 +14,15 @@ interface TranslationValues {
   readButton: string;
   copyright: string;
   relatedTopics: string;
+  shaders: string;
+  linearAlgebra: string;
+  colorTheory: string;
+  shadersTitle: string;
+  shadersContent: string;
+  linearAlgebraTitle: string;
+  linearAlgebraContent: string;
+  colorTheoryTitle: string;
+  colorTheoryContent: string;
   [key: string]: string; // Add index signature to support dynamic keys
 }
 
@@ -35,6 +44,14 @@ const translations: Record<string, TranslationValues> = {
     shaders: 'Shaders',
     linearAlgebra: 'Linear Algebra',
     colorTheory: 'Color Space',
+    shadersTitle: 'Introduction to Shaders',
+    shadersContent: 'Shaders are programs that run on the GPU and define how pixels are rendered. They are essential for modern computer graphics and can create stunning visual effects.',
+    
+    linearAlgebraTitle: 'Linear Algebra Fundamentals',
+    linearAlgebraContent: 'Linear algebra is the foundation of computer graphics. It deals with vectors, matrices, and transformations that are crucial for 3D rendering.',
+    
+    colorTheoryTitle: 'Understanding Color Spaces',
+    colorTheoryContent: 'Color theory explores how we perceive and represent colors in digital graphics. Understanding color spaces like RGB, HSL, and CMYK is essential.',
   },
   ru: {
     topics: 'Темы',
@@ -52,7 +69,15 @@ const translations: Record<string, TranslationValues> = {
     relatedTopics: 'Связанные темы',
     shaders: 'Шейдеры',
     linearAlgebra: 'Линейная алгебра',
-    colorTheory: 'Цветовое пространство'
+    colorTheory: 'Цветовое пространство',
+    shadersTitle: 'Введение в шейдеры',
+    shadersContent: 'Шейдеры - это программы, работающие на GPU и определяющие способ отрисовки пикселей. Они необходимы для современной компьютерной графики и могут создавать потрясающие визуальные эффекты.',
+    
+    linearAlgebraTitle: 'Основы линейной алгебры',
+    linearAlgebraContent: 'Линейная алгебра - это основа компьютерной графики. Она имеет дело с векторами, матрицами и преобразованиями, которые важны для 3D-рендеринга.',
+    
+    colorTheoryTitle: 'Понимание цветовых пространств',
+    colorTheoryContent: 'Теория цвета исследует то, как мы воспринимаем и представляем цвета в цифровой графике. Понимание цветовых пространств, таких как RGB, HSL и CMYK, является важным.',
   }
 };
 
