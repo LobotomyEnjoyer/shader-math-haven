@@ -38,7 +38,7 @@ const MainPanel: React.FC = () => {
             */}
             
             <h2 className="text-2xl font-bold mb-4">{t('shadersTitle')}</h2>
-            <p className="mb-4">{t('shadersContent')}</p>
+            <p className="mb-4 overflow-x-auto">{t('shadersContent')}</p>
             
             {/* Add shader-specific content here */}
             <div className="bg-gray-100 p-4 rounded-md overflow-x-auto">
