@@ -44,6 +44,8 @@ const translations: Record<string, TranslationValues> = {
     shaders: 'Shaders',
     linearAlgebra: 'Linear Algebra',
     colorTheory: 'Color Space',
+    
+
     shadersTitle: 'Introduction to Shaders',
     shadersContent: 'Shaders are programs that run on the GPU and define how pixels are rendered. They are essential for modern computer graphics and can create stunning visual effects.',
     
@@ -70,6 +72,8 @@ const translations: Record<string, TranslationValues> = {
     shaders: 'Шейдеры',
     linearAlgebra: 'Линейная алгебра',
     colorTheory: 'Цветовое пространство',
+
+
     shadersTitle: 'Введение в шейдеры',
     shadersContent: 'Шейдеры - это программы, работающие на GPU и определяющие способ отрисовки пикселей. Они необходимы для современной компьютерной графики и могут создавать потрясающие визуальные эффекты.',
     
