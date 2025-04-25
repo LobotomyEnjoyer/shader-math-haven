@@ -95,7 +95,6 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             
             <img>
-            import CMYKopti from '@/imgs/CMYK_after_opti.png';
             src = {CMYKopti} 
             alt="CMYK"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"</img> 
