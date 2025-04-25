@@ -124,8 +124,42 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             </ol>
 
 
+
+
+
+            <h2 className="text-2xl font-bold mb-4">{'HSV (HSB)'}</h2>
+
+            <LatexText className="mb-4">
+              {`Цветовая модель HSB - Цветовая модель HSB (или же HSV) представляет собой набор из трёх компонент: Hue -  оттенок или тон цвета (красный, синий, зелёны), Saturation - насыщенность, Brightness (Value) - яркость цвета. Тон в данной цветовой модели в числовом формате определяется следующим образом: $0 \leq H < 360$, либо $0 \leq H < 100$ или $0 \leq H < 1$; насыщенность принимает значения в диапазоне $0 \leq S \leq 100$ или $0 \leq S \leq 1$, аналогично и для яркости $B$ (или же $V$). Эта модель разработана для первых графических редакторов еще в 90-х годах. Цвет, представленный в HSB, зависит от устройства, на которое он будет выведен, так как HSB — преобразование модели RGB, которая тоже зависит от устройства. Для получения кода цвета, не зависящего от устройства, используется модель Lab.`}
+            </LatexText>
+
+            <p className = "mb-4">Это простая и понятная модель, однако ее можно использовать только для виртуальной графики. Она не совмещается с печатными устройствами, хотя и является наиболее охватывающей в сравнении с другими. Часто такую модель применяют для создания линейных (примитивных) компьютерных мультфильмов, при оформлении картинок в соцсетях и т.п.</p>
             
-              
+            <figure>
+            <img
+            src = "src/imgs/HSB_cylinder.png"
+            alt="CMYK"
+            className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
+            <figcaption>Графическая интерпретация HSV (HSB) в виде цилиндра</figcaption>
+            </figure>
+
+
+            <figure>
+            <img
+            src = "src/imgs/HSV_cone.png"
+            alt="CMYK"
+            className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
+            <figcaption>Графическая интерпретация HSV (HSB) в виде конуса</figcaption>
+            </figure>
+
+
+            <figure>
+            <img
+            src = "src/imgs/Triangulo_HSV.png"
+            alt="CMYK"
+            className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
+            <figcaption>Цветовой круг модели HSV (HSB)</figcaption>
+            </figure>
 
 
 
