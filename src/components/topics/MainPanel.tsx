@@ -95,7 +95,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             
             <img
-            src = {"@/src/imgs/CMYK_after_opti.png"} 
+            src = {"@/imgs/CMYK_after_opti.png"} 
             alt="CMYK"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
               
