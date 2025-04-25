@@ -47,7 +47,6 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               />
             </div>
 
-            <h2 className="text-2xl font-bold mb-4">{'RGB'}</h2>
           </>
         );
 
@@ -62,6 +61,8 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               <div className="bg-yellow-500 h-20 rounded-md flex items-center justify-center text-white">HSL</div>
               <div className="bg-blue-500 h-20 rounded-md flex items-center justify-center text-white">CMYK</div>
             </div>
+
+            <h2 className="text-2xl font-bold mb-4">{'RGB'}</h2>
           </>
         );
       
