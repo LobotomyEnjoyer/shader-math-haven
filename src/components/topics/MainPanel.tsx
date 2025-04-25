@@ -87,17 +87,24 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             
             <h2 className="text-2xl font-bold mb-4">{'CMYK'}</h2>
 
+            
             <p className = "mb-4">CMYK - Цветовая модель, расшифровывающаяся как Cyan (Голубой), Magenta (Пурпурный), Yellow (Желтый) и Key/Black (Черный). Данная цветовая модель используется в основном в полиграфии. Результат применения CMYK зависит не только от спектральных характеристик, но и от типа бумаги и от способа нанесения красок. В отличие от модели RGB, числовые значения в CMYK определяются процентным содержанием какого-либо цвета. На пример, значение (60, 10, 30, 5) будет означать 60-голубой, 10-пурпурный, 30-желтый, 5-черный. Иногда записывается в другом формате: C60M10Y30K5. В оптимизированном случае чёрная составляющая полностью компенсирует максимально равные доли цветных красителей так, что при определении любого цвета как минимум один цветной компонент равен нулю. То есть цвет (30, 45, 80, 5) оптимизируется в (0, 15, 50, 35). На изображениях ниже представлен пример такой оптимизации.</p>
-
+            
+            <figure>
             <img
             src = "src/imgs/CMYK_bef_opti.png"
             alt="CMYK"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
+            <figcaption>A caption</figcaption>
+            </figure>
 
+            <figure>
             <img
-            src = "src/imgs/CMYK_after_opti.png"
+            src = "src/imgs/CMYK_bef_opti.png"
             alt="CMYK"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
+            <figcaption>A caption</figcaption>
+            </figure>
               
 
 
