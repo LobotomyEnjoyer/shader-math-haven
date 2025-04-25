@@ -102,7 +102,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             <figure>
             <img
             src = "src/imgs/CMYK_bef_opti.png"
-            alt="CMYK"
+            alt="CMYK_bef"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Значения CMYK до оптимизации</figcaption>
             </figure>
@@ -111,7 +111,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             <figure>
             <img
             src = "src/imgs/CMYK_after_opti.png"
-            alt="CMYK"
+            alt="CMYK_after"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Значения CMYK после оптимизации</figcaption>
             </figure>
@@ -138,7 +138,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             <figure>
             <img
             src = "src/imgs/HSB_cylinder.png"
-            alt="CMYK"
+            alt="HSB_cyl"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Графическая интерпретация HSV (HSB) в виде цилиндра</figcaption>
             </figure>
@@ -147,7 +147,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             <figure>
             <img
             src = "src/imgs/HSV_cone.png"
-            alt="CMYK"
+            alt="HSV_cone"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Графическая интерпретация HSV (HSB) в виде конуса</figcaption>
             </figure>
@@ -156,7 +156,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             <figure>
             <img
             src = "src/imgs/Triangulo_HSV.png"
-            alt="CMYK"
+            alt="Triangulo_HSV"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Цветовой круг модели HSV (HSB)</figcaption>
             </figure>
