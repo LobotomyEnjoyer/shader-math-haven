@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { useTopics } from '@/contexts/TopicsContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 import { Card, CardContent } from '@/components/ui/card';
 import MathFormula from '@/components/MathFormula';
+import LatexText from '@/components/LatexText';
 
 const MainPanel: React.FC = () => {
   const { selectedTopic } = useTopics();
@@ -38,7 +40,10 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
         return (
           <>
             <h2 className="text-2xl font-bold mb-4">{t('linearAlgebraTitle')}</h2>
-            <p className="mb-4">{t('linearAlgebraContent')}</p>
+            <LatexText className="mb-4">
+              {t('linearAlgebraContent')} Here's an example of inline math: $x + y = z$ and 
+              another one $\vec{v} = (x, y, z)$. You can also use display mode math:
+            </LatexText>
             
             <div className="my-4">
               <MathFormula 
@@ -46,7 +51,6 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
                 displayMode={true}
               />
             </div>
-
           </>
         );
 
