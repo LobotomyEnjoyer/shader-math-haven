@@ -46,6 +46,8 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
                 displayMode={true}
               />
             </div>
+
+            <h2 className="text-2xl font-bold mb-4">{'RGB'}</h2>
           </>
         );
 
