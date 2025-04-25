@@ -95,7 +95,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             src = "src/imgs/CMYK.png"
             alt="CMYK"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
-            <figcaption>Значения CMYK до оптимизации</figcaption>
+            <figcaption>Графическая интерпретация CMYK</figcaption>
             </figure>
 
 
