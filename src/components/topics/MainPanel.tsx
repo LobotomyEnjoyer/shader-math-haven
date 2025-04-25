@@ -8,7 +8,7 @@ import MathFormula from '@/components/MathFormula';
 import LatexText from '@/components/LatexText';
 
 
-// import CMYKopti from '@/imgs/CMYK_after_opti.png';
+import CMYKopti from '@/imgs/CMYK_after_opti.png';
 import CMYKbef from '@/imgs/CMYK_bef_opti.png';
 
 const MainPanel: React.FC = () => {
