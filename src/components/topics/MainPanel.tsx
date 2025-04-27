@@ -139,7 +139,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             <img
             src = "src/imgs/HSB_cylinder.jpg"
             alt="HSB_cyl"
-            className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
+            className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4 margin-auto"></img>
             <figcaption>Графическая интерпретация HSV (HSB) в виде цилиндра</figcaption>
             </figure>
 
