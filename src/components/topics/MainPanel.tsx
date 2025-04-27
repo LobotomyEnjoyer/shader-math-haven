@@ -121,8 +121,12 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
           <div className="my-4">
               <MathFormula 
-                formula="T = \\begin{bmatrix}x_1 & y_1 & t_1\\ x_2 & y_2 & t_2 \\
-            x_3 & y_3 & t_3\\ end{bmatrix}"
+                formula="T = 
+                \begin{bmatrix}
+                x_1 & y_1 & t_1\\
+                x_2 & y_2 & t_2 \\
+                x_3 & y_3 & t_3\\ 
+                \end{bmatrix}"
                 displayMode={true}
               />
             </div>
