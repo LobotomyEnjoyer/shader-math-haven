@@ -62,8 +62,8 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
             
             <div className="grid grid-cols-3 gap-4 my-4">
               <div className="bg-red-500 h-20 rounded-md flex items-center justify-center text-white">RGB</div>
-              <div className="bg-yellow-500 h-20 rounded-md flex items-center justify-center text-white">HSB</div>
-              <div className="bg-blue-500 h-20 rounded-md flex items-center justify-center text-white">CMYK</div>
+              <div className="bg-yellow-500 h-20 rounded-md flex items-center justify-center text-white">CMYK</div>
+              <div className="bg-blue-500 h-20 rounded-md flex items-center justify-center text-white">HSV</div>
             </div>
 
             <h2 className="text-2xl font-bold mb-4">{'RGB'}</h2>
