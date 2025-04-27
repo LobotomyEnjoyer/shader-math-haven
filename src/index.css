@@ -99,3 +99,7 @@
 figure figcaption {
   text-align: center;
 }
+
+figure img {
+  margin: auto;
+}
