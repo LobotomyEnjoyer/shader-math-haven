@@ -52,14 +52,11 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               />
             </div>
 
+            <h2 className="text-2xl font-bold mb-4">О матрицах преобразования</h2>
 
             <LatexText className = "mb-4">
             Матрицы преобразований работают с однородными координатами точки, т.е. с расширенными координатами, где точка имеет $(n+1)$ координату в $n$-мерном пространстве.
             </LatexText>
-
-
-
-          
 
           {/* <LatexText className = "mb-4">
 
@@ -213,7 +210,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
 
 
-
+            <h2 className="text-2xl font-bold mb-4">Матрица параллельного переноса</h2>
 
             <p className = "mb-4">
           Матрицей параллельного переноса является матрица вида:
@@ -238,6 +235,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
           Пусть дана точка $A = (a_1,\,a_2)$, тогда образ $A' = T \cdot A$ будет задаваться следующими координатами: $A' = (a_1+t_x,\,a_2+t_y)$. Стоит отметить, что знаменатель никуда не делся, т.к. сами координаты точки $A'$ делятся на $0\cdot a_1 + 0\cdot a_2 + 1 = 1$, из-за чего знаменатель был опущен.
           </LatexText>
 
+          <h2 className="text-2xl font-bold mb-4">Матрица поворота</h2>
 
             <div className="my-4">
               <MathFormula 
@@ -251,7 +249,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               />
             </div>
 
-
+            <h2 className="text-2xl font-bold mb-4">Матрица растяжения</h2>
 
             <div className="my-4">
               <MathFormula 
@@ -265,6 +263,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               />
             </div>
 
+            <h2 className="text-2xl font-bold mb-4">Матрица наклона</h2>
 
             <div className="my-4">
               <MathFormula 
