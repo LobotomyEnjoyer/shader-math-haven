@@ -58,7 +58,7 @@ const initialRelatedTopics: Record<string, RelatedTopic[]> = {
   'linear-algebra': [
     { id: 'matrices', titleKey: 'matrices', type: 'internal' },
     { id: 'vectors', titleKey: 'vectors', type: 'internal' },
-    { id: 'linear-transformations', titleKey: 'linearTransformations', type: 'internal' }
+    { id: 'linear-transformations', titleKey: 'geogebraClassic', type: 'internal' }
   ],
   'color-theory': [
     { id: 'rgb', titleKey: 'rgb', type: 'internal' },
