@@ -54,12 +54,12 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             <div className="my-4">
               <MathFormula 
-                formula="T = \Big(
-\begin{smallmatrix}
+                formula="T =
+\begin{bmatrix}
     1&0&t_x\\[2pt]
     0&1&t_y\\[2pt]
     0&0&1
-\end{smallmatrix}\Big)"
+\end{bmatrix}"
                 displayMode={true}
               />
             </div>
