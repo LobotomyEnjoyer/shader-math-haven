@@ -68,12 +68,12 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             <div className="my-4">
               <MathFormula 
-                formula="T = \Big(
-\begin{smallmatrix}
+                formula="T =
+\begin{bmatrix}
     \cos{\alpha}&\mp\sin{\alpha}&0\\[2pt]
     \pm\sin{\alpha}&\cos{\alpha}&0\\[2pt]
     0&0&1
-\end{smallmatrix}\Big)"
+\end{bmatrix}"
                 displayMode={true}
               />
             </div>
@@ -82,12 +82,12 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             <div className="my-4">
               <MathFormula 
-                formula="T = \Big(
-\begin{smallmatrix}
+                formula="T =
+\begin{bmatrix}
     k_x&0&0\\[2pt]
     0&k_y&0\\[2pt]
     0&0&1
-\end{smallmatrix}\Big)"
+\end{bmatrix}"
                 displayMode={true}
               />
             </div>
@@ -95,12 +95,12 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             <div className="my-4">
               <MathFormula 
-                formula="T = \Big(
-\begin{smallmatrix}
+                formula="T =
+\begin{bmatrix}
     1&g_x&0\\[2pt]
     g_y&1&0\\[2pt]
     0&0&1
-\end{smallmatrix}\Big)"
+\end{bmatrix}"
                 displayMode={true}
               />
             </div>
