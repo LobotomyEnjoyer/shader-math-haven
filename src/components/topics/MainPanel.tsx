@@ -51,6 +51,59 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
                 displayMode={true}
               />
             </div>
+
+            <div className="my-4">
+              <MathFormula 
+                formula="T = \Big(
+\begin{smallmatrix}
+    1&0&t_x\\[2pt]
+    0&1&t_y\\[2pt]
+    0&0&1
+\end{smallmatrix}\Big)"
+                displayMode={true}
+              />
+            </div>
+
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="T = \Big(
+\begin{smallmatrix}
+    \cos{\alpha}&\mp\sin{\alpha}&0\\[2pt]
+    \pm\sin{\alpha}&\cos{\alpha}&0\\[2pt]
+    0&0&1
+\end{smallmatrix}\Big)"
+                displayMode={true}
+              />
+            </div>
+
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="T = \Big(
+\begin{smallmatrix}
+    k_x&0&0\\[2pt]
+    0&k_y&0\\[2pt]
+    0&0&1
+\end{smallmatrix}\Big)"
+                displayMode={true}
+              />
+            </div>
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="T = \Big(
+\begin{smallmatrix}
+    1&g_x&0\\[2pt]
+    g_y&1&0\\[2pt]
+    0&0&1
+\end{smallmatrix}\Big)"
+                displayMode={true}
+              />
+            </div>
           </>
         );
 

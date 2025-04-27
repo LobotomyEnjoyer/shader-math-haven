@@ -51,7 +51,7 @@ const initialTopics: Topic[] = [
 // Initial related topics
 const initialRelatedTopics: Record<string, RelatedTopic[]> = {
   'shaders': [
-    { id: 'shader-types', titleKey: 'shaderTypes', type: 'internal' },
+    { id: 'shader-types', titleKey: 'vulkan', type: 'internal' },
     { id: 'glsl', titleKey: 'glsl', type: 'external', url: 'https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)' },
     { id: 'webgl', titleKey: 'webgl', type: 'external', url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API' }
   ],
@@ -62,7 +62,7 @@ const initialRelatedTopics: Record<string, RelatedTopic[]> = {
   ],
   'color-theory': [
     { id: 'rgb', titleKey: 'rgb', type: 'internal' },
-    { id: 'hsl', titleKey: 'hsl', type: 'internal' },
+    { id: 'hsv', titleKey: 'hsv', type: 'internal' },
     { id: 'color-spaces', titleKey: 'colorSpaces', type: 'external', url: 'https://en.wikipedia.org/wiki/Color_space' }
   ]
 };

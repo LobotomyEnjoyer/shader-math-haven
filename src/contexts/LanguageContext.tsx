@@ -42,7 +42,7 @@ const translations: Record<string, TranslationValues> = {
     copyright: '© {year} All Rights Reserved',
     relatedTopics: 'Related Topics',
     shaders: 'Shaders',
-    linearAlgebra: 'Linear Algebra',
+    linearAlgebra: 'Transformation Matrices',
     colorTheory: 'Color Space',
     
 
