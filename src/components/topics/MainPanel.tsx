@@ -199,9 +199,9 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             <div className="my-4">
               <MathFormula 
-                formula="\begin{equation}
+                formula="\begin{equation*}
     A' = \left(\frac{x_1\cdot a_1 + y_1\cdot a_2 + t_1}{x_3\cdot a_1 + y_3\cdot a_2 + t_3},  \frac{x_2\cdot a_1 + y_2\cdot a_2 + t_2}{x_3\cdot a_1 + y_3\cdot a_2 + t_3}\right)
-\end{equation}"
+\end{equation*}"
                 displayMode={true}
               />
             </div>
