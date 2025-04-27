@@ -52,6 +52,11 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               />
             </div>
 
+          <p className = "mb-4">
+          Матрицей параллельного переноса является матрица вида:
+          </p>
+
+
             <div className="my-4">
               <MathFormula 
                 formula="T =
@@ -63,6 +68,11 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
                 displayMode={true}
               />
             </div>
+
+          <p className = "mb-4">
+          Данная матрица работает следующим образом:
+Пусть дана точка <LatexText>$A = (a_1,\,a_2)$</LatexText>, тогда образ $A' = T \cdot A$ будет задаваться следующими координатами: $A' = (a_1+t_x,\,a_2+t_y)$. Стоит отметить, что знаменатель никуда не делся, т.к. сами координаты точки $A'$ делятся на $0\cdot a_1 + 0\cdot a_2 + 1 = 1$, из-за чего знаменатель был опущен.
+          </p>
 
 
 
