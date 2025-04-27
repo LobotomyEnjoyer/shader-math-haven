@@ -59,28 +59,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
 
 
-          <p className = "mb-4">
-          Матрицей параллельного переноса является матрица вида:
-          </p>
-
-
-            <div className="my-4">
-              <MathFormula 
-                formula="T =
-\begin{bmatrix}
-    1&0&t_x\\[2pt]
-    0&1&t_y\\[2pt]
-    0&0&1
-\end{bmatrix}"
-                displayMode={true}
-              />
-            </div>
-
-          <LatexText className = "mb-4">
-          Данная матрица работает следующим образом:
           
-          Пусть дана точка $A = (a_1,\,a_2)$, тогда образ $A' = T \cdot A$ будет задаваться следующими координатами: $A' = (a_1+t_x,\,a_2+t_y)$. Стоит отметить, что знаменатель никуда не делся, т.к. сами координаты точки $A'$ делятся на $0\cdot a_1 + 0\cdot a_2 + 1 = 1$, из-за чего знаменатель был опущен.
-          </LatexText>
 
           {/* <LatexText className = "mb-4">
 
@@ -139,6 +118,125 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
                 displayMode={true}
               />
             </div>
+
+
+            <p className = "mb-4">
+            Данное равенство для простоты можно записать в виде следующей системы:
+            </p>
+            
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{equation*}
+    \begin{cases}
+        a_1' = x_1\cdot a_1 + y_1\cdot a_2 + t_1 \\
+        a_2' = x_2\cdot a_1 + y_2\cdot a_2 + t_2 \\
+        a_3' = x_3\cdot a_1 + y_3\cdot a_2 + t_3
+    \end{cases}
+\end{equation*}"
+                displayMode={true}
+              />
+            </div>
+
+            <LatexText className = "mb-4">
+            Отсюда мы получаем координаты для точки $A'$, подставляем их и получим:
+            </LatexText>
+
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{equation*}
+    A' =
+    \begin{pmatrix}
+        a_1' \\
+        a_2' \\
+        a_3'
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        x_1\cdot a_1 + y_1\cdot a_2 + t_1 \\
+        x_2\cdot a_1 + y_2\cdot a_2 + t_2 \\
+        x_3\cdot a_1 + y_3\cdot a_2 + t_3
+    \end{pmatrix}
+\end{equation*}"
+                displayMode={true}
+              />
+            </div>
+
+
+            <LatexText className = "mb-4">
+            Так как до этого мы работали в однородных координатах, необходимо привести третью координату точку $A'$ к единице, для этого делим все координаты точки на $a_3' = x_3\cdot a_1 + y_3\cdot a_2 + t_3$ и получим:
+            </LatexText>
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{equation*}
+    A' =
+    \begin{pmatrix}
+        \frac{a_1'}{a_3'} \\[6pt]
+        \frac{a_2'}{a_3'} \\[6pt]
+        1
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \frac{x_1\cdot a_1 + y_1\cdot a_2 + t_1}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[6pt]
+        \frac{x_2\cdot a_1 + y_2\cdot a_2 + t_2}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[6pt]
+        1
+    \end{pmatrix}
+\end{equation*}"
+                displayMode={true}
+              />
+            </div>
+
+
+            <LatexText className = "mb-4">
+            Переводя в обычные координаты, точку $A'$ можно записать в виде:
+            </LatexText>
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{equation}
+    A' = \left(\frac{x_1\cdot a_1 + y_1\cdot a_2 + t_1}{x_3\cdot a_1 + y_3\cdot a_2 + t_3},  \frac{x_2\cdot a_1 + y_2\cdot a_2 + t_2}{x_3\cdot a_1 + y_3\cdot a_2 + t_3}\right)
+\end{equation}"
+                displayMode={true}
+              />
+            </div>
+
+            <LatexText className = "mb-4">
+            Таким образом были получены координаты нового образа точки, которые зависят от координат точки $A$ и элементов матрицы преобразования $T$.
+            </LatexText>
+
+
+
+
+
+
+            <p className = "mb-4">
+          Матрицей параллельного переноса является матрица вида:
+          </p>
+
+
+            <div className="my-4">
+              <MathFormula 
+                formula="T =
+\begin{bmatrix}
+    1&0&t_x\\[2pt]
+    0&1&t_y\\[2pt]
+    0&0&1
+\end{bmatrix}"
+                displayMode={true}
+              />
+            </div>
+
+          <LatexText className = "mb-4">
+          Данная матрица работает следующим образом:
+          
+          Пусть дана точка $A = (a_1,\,a_2)$, тогда образ $A' = T \cdot A$ будет задаваться следующими координатами: $A' = (a_1+t_x,\,a_2+t_y)$. Стоит отметить, что знаменатель никуда не делся, т.к. сами координаты точки $A'$ делятся на $0\cdot a_1 + 0\cdot a_2 + 1 = 1$, из-за чего знаменатель был опущен.
+          </LatexText>
 
 
             <div className="my-4">
