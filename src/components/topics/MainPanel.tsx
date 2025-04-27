@@ -98,22 +98,22 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
           <div className="my-4">
               <MathFormula 
                 formula="\begin{equation*}
-    A' = T \cdot A = \begin{pmatrix}
+    A' = T \cdot A = \begin{bmatrix}
     x_1 & y_1 & t_1\\
     x_2 & y_2 & t_2 \\
     x_3 & y_3 & t_3
-    \end{pmatrix}
+    \end{bmatrix}
     \cdot 
-\begin{pmatrix}
+\begin{bmatrix}
     a_1 \\
     a_2 \\
     1
-\end{pmatrix}
-= \begin{pmatrix}
+\end{bmatrix}
+= \begin{bmatrix}
     a_1' \\
     a_2' \\
     a_3'
-\end{pmatrix}
+\end{bmatrix}
 \end{equation*}"
                 displayMode={true}
               />
@@ -149,17 +149,17 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               <MathFormula 
                 formula="\begin{equation*}
     A' =
-    \begin{pmatrix}
+    \begin{bmatrix}
         a_1' \\
         a_2' \\
         a_3'
-    \end{pmatrix}
+    \end{bmatrix}
     =
-    \begin{pmatrix}
+    \begin{bmatrix}
         x_1\cdot a_1 + y_1\cdot a_2 + t_1 \\
         x_2\cdot a_1 + y_2\cdot a_2 + t_2 \\
         x_3\cdot a_1 + y_3\cdot a_2 + t_3
-    \end{pmatrix}
+    \end{bmatrix}
 \end{equation*}"
                 displayMode={true}
               />
@@ -175,17 +175,17 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
               <MathFormula 
                 formula="\begin{equation*}
     A' =
-    \begin{pmatrix}
+    \begin{bmatrix}
         \frac{a_1'}{a_3'} \\[6pt]
         \frac{a_2'}{a_3'} \\[6pt]
         1
-    \end{pmatrix}
+    \end{bmatrix}
     =
-    \begin{pmatrix}
+    \begin{bmatrix}
         \frac{x_1\cdot a_1 + y_1\cdot a_2 + t_1}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[6pt]
         \frac{x_2\cdot a_1 + y_2\cdot a_2 + t_2}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[6pt]
         1
-    \end{pmatrix}
+    \end{bmatrix}
 \end{equation*}"
                 displayMode={true}
               />
