@@ -55,7 +55,7 @@ const initialRelatedTopics: Record<string, RelatedTopic[]> = {
     { id: 'glsl', titleKey: 'glsl', type: 'external', url: 'https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)' },
     { id: 'webgl', titleKey: 'webgl', type: 'external', url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API' }
   ],
-  'linear-algebra': [
+  'transformation-matrices': [
     { id: 'matrices', titleKey: 'matrices', type: 'internal' },
     { id: 'vectors', titleKey: 'vectors', type: 'internal' },
     { id: 'linear-transformations', titleKey: 'geogebraClassic', type: 'internal' } //titleKey was "linearTransformations"
