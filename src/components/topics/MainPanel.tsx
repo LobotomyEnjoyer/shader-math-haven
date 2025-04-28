@@ -25,7 +25,7 @@ const MainPanel: React.FC = () => {
             <p className = "mb-4">Шейдер представляет собой компьютерную программу, которая использует средства графического процессора для рендеринга изображения. Шейдеры пишут на особых языках программирования, их компиляция происходит в инструкции для графического процессора.</p>
             
             
-            <div className="bg-gray-100 p-4 rounded-md w-full min-w-0">
+            {/* <div className="bg-gray-100 p-4 rounded-md w-full min-w-0">
               <code>
                 <pre className="whitespace-pre-wrap break-all">
                   {`// Example GLSL shader
@@ -35,7 +35,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 }`}
                 </pre>
               </code>
-            </div>
+            </div> */}
             
             
             
