@@ -48,8 +48,6 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
             <p className = "mb-4">С появлением перенастраиваемых графических конвейеров появилась возможность проводить на GPU математические расчёты (GPGPU). Наиболее известные механизмы GPGPU — Nvidia CUDA, OpenCL от Microsoft DirectCompute, Vulkan от Khronos Group.</p>
 
-            <p className = "mb-4">С появлением перенастраиваемых графических конвейеров появилась возможность проводить на GPU математические расчёты (GPGPU). Наиболее известные механизмы GPGPU — Nvidia CUDA, OpenCL от Microsoft DirectCompute, Vulkan от Khronos Group.</p>
-
             <p className = "mb-4">Сначала видеокарты оснащали несколькими специализированными процессорами, поддерживающими разные наборы инструкций. Шейдеры делили на три типа в зависимости от того, какой процессор будет их исполнять (в зависимости от того, какие наборы инструкций доступны):</p>
 
             <ol className="list-decimal mb-4 ml-6">
