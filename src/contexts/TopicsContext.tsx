@@ -37,9 +37,9 @@ const initialTopics: Topic[] = [
     imageUrl: '/lovable-uploads/66975d7e-d368-4983-8083-c804b86dffb6.png'
   },
   {
-    id: 'linear-algebra',
-    titleKey: 'linearAlgebra',
-    contentKey: 'linearAlgebraContent'
+    id: 'transformation-matrices',
+    titleKey: 'transformationMatrices',
+    contentKey: 'transMatrContent'
   },
   {
     id: 'color-theory',

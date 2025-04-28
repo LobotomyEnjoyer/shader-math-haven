@@ -36,12 +36,12 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
           </>
         );
 
-      case 'linear-algebra':
+      case 'transformation-matrices':
         return (
           <>
-            <h2 className="text-2xl font-bold mb-4">{t('linearAlgebraTitle')}</h2>
+            <h2 className="text-2xl font-bold mb-4">{t('transMatrTitle')}</h2>
             <LatexText className="mb-4">
-              {`${t('linearAlgebraContent')} Here's an example of inline math: $x + y = z$ and 
+              {`${t('transMatrContent')} Here's an example of inline math: $x + y = z$ and 
               another one $\\vec{v} = (x, y, z)$. You can also use display mode math:`}
             </LatexText>
             

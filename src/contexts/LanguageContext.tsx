@@ -42,15 +42,15 @@ const translations: Record<string, TranslationValues> = {
     copyright: '© {year} All Rights Reserved',
     relatedTopics: 'Related Topics',
     shaders: 'Shaders',
-    linearAlgebra: 'Transformation Matrices',
+    transformationMatrices: 'Transformation Matrices',
     colorTheory: 'Color Space',
     
 
     shadersTitle: 'Introduction to Shaders',
     shadersContent: 'Shaders are programs that run on the GPU and define how pixels are rendered. They are essential for modern computer graphics and can create stunning visual effects.',
     
-    linearAlgebraTitle: 'Linear Algebra Fundamentals',
-    linearAlgebraContent: 'Linear algebra is the foundation of computer graphics. It deals with vectors, matrices, and transformations that are crucial for 3D rendering.',
+    transMatrTitle: 'Transformation Matrices',
+    transMatrContent: 'Linear algebra is the foundation of computer graphics. It deals with vectors, matrices, and transformations that are crucial for 3D rendering.',
     
     colorTheoryTitle: 'Understanding Color Spaces',
     colorTheoryContent: 'Color theory explores how we perceive and represent colors in digital graphics. Understanding color spaces like RGB, HSL, and CMYK is essential.',
@@ -70,15 +70,15 @@ const translations: Record<string, TranslationValues> = {
     copyright: '© {year} Все права защищены',
     relatedTopics: 'Связанные темы',
     shaders: 'Шейдеры',
-    linearAlgebra: 'Линейная алгебра',
+    transformationMatrices: 'Матрицы преобразования',
     colorTheory: 'Цветовое пространство',
 
 
     shadersTitle: 'Введение в шейдеры',
     shadersContent: 'Шейдеры - это программы, работающие на GPU и определяющие способ отрисовки пикселей. Они необходимы для современной компьютерной графики и могут создавать потрясающие визуальные эффекты.',
     
-    linearAlgebraTitle: 'Основы линейной алгебры',
-    linearAlgebraContent: 'Линейная алгебра - это основа компьютерной графики. Она имеет дело с векторами, матрицами и преобразованиями, которые важны для 3D-рендеринга.',
+    transMatrTitle: 'Основы линейной алгебры',
+    transMatrContent: 'Линейная алгебра - это основа компьютерной графики. Она имеет дело с векторами, матрицами и преобразованиями, которые важны для 3D-рендеринга.',
     
     colorTheoryTitle: 'Понимание цветовых пространств',
     colorTheoryContent: 'Теория цвета исследует то, как мы воспринимаем и представляем цвета в цифровой графике. Понимание цветовых пространств, таких как RGB, HSL и CMYK, является важным.',
