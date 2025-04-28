@@ -53,7 +53,7 @@ const translations: Record<string, TranslationValues> = {
     transMatrContent: 'Linear algebra is the foundation of computer graphics. It deals with vectors, matrices, and transformations that are crucial for 3D rendering.',
     
     colorTheoryTitle: 'Understanding Color Spaces',
-    colorTheoryContent: 'Color theory explores how we perceive and represent colors in digital graphics. Understanding color spaces like RGB, HSV, and CMYK is essential.',
+    colorTheoryContent: 'Color theory explores how we perceive and represent colors in digital graphics. Understanding color spaces like RGB, HSL, and CMYK is essential.',
   },
   ru: {
     topics: 'Темы',
@@ -81,7 +81,7 @@ const translations: Record<string, TranslationValues> = {
     transMatrContent: 'Линейная алгебра - это основа компьютерной графики. Она имеет дело с векторами, матрицами и преобразованиями, которые важны для 3D-рендеринга.',
     
     colorTheoryTitle: 'Понимание цветовых пространств',
-    colorTheoryContent: 'Теория цвета исследует то, как мы воспринимаем и представляем цвета в цифровой графике. Понимание цветовых пространств, таких как RGB, HSV и CMYK, является важным.',
+    colorTheoryContent: 'Теория цвета исследует то, как мы воспринимаем и представляем цвета в цифровой графике. Понимание цветовых пространств, таких как RGB, HSL и CMYK, является важным.',
   }
 };
 
