@@ -40,7 +40,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
         return (
           <>
             <h2 className="text-2xl font-bold mb-4">{t('transMatrTitle')}</h2>
-            <LatexText className="mb-4">
+            {/* <LatexText className="mb-4">
               {`${t('transMatrContent')} Here's an example of inline math: $x + y = z$ and 
               another one $\\vec{v} = (x, y, z)$. You can also use display mode math:`}
             </LatexText>
@@ -50,9 +50,9 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
                 formula="\begin{bmatrix} x' \\ y' \\ z' \end{bmatrix} = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix}"
                 displayMode={true}
               />
-            </div>
+            </div> */}
 
-            <h2 className="text-2xl font-bold mb-4">О матрицах преобразования</h2>
+            {/* <h2 className="text-2xl font-bold mb-4">О матрицах преобразования</h2> */}
 
             <LatexText className = "mb-4">
             Матрицы преобразований работают с однородными координатами точки, т.е. с расширенными координатами, где точка имеет $(n+1)$ координату в $n$-мерном пространстве.
