@@ -540,6 +540,220 @@ void main(){
 
             <h2 className="text-2xl font-bold mb-4">Композиция матриц преобразования</h2>
 
+            <LatexText className="mb-4">Композицией операторов преобразований (или умножение матриц преобразований) осуществляется путем последовательного произведения матриц преобразований. Из курса линейной алгебры известно, что матрицы не коммутативны (т.е. перестановка матриц в произведении даст неоднозначный результат), но матрицы являются ассоциативным в произведении, т.е. $(A\cdot B)\cdot C = A\cdot (B \cdot C)$. Если при работе с геометрическим объектом необходимо применить сразу несколько операторов преобразования, то можно воспользоваться формулой: $(T_1 \circ T_2 \circ T_3 \circ \dots \circ T_n)(A) = T_1(T_2(T_3(\dots(T_n(A))\dots)))$, где $T_1,\,T_2,\,\dots,\,T_n$ - матрицы преобразования, $A$ - некоторая вершина объекта.</LatexText>
+
+            <LatexText className="mb-4">{`Рассмотрим два одинаковых примера, в которых будет показано вычисление новых координат одной точки двумя способами. Пусть $A = (a_1,\\,a_2)$ - некоторая точка в пространстве $\\mathbb{R}^2$. Пусть матрица масштабирования`}</LatexText>
+
+            <div className="my-4">
+              <MathFormula 
+                formula="T_1 =
+\begin{bmatrix}
+    k_x&0&0\\[2pt]
+    0&k_y&0\\[2pt]
+    0&0&1
+\end{bmatrix}"
+                displayMode={true}
+              />
+            </div>
+
+            <LatexText className="mb-4">применяется к точке $A$ в первую очередь, а затем применяется матрица параллельного переноса</LatexText>
+
+            <div className="my-4">
+              <MathFormula 
+                formula="T_2 =
+\begin{bmatrix}
+    1&0&t_x\\[2pt]
+    0&1&t_y\\[2pt]
+    0&0&1
+\end{bmatrix}"
+                displayMode={true}
+              />
+            </div>
+
+            <LatexText className="mb-4">Приведём точку $A$ к однородным системам координат: $A = (a_1,\,a_2,\,1)$</LatexText>
+
+            <p className="mb-4">Первый способ вычисления:</p>
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{align*}
+    A' &= T_2 \cdot \left(T_1 \cdot A\right) =
+    \begin{bmatrix}
+    k_x&0&0\\[2pt]
+    0&k_y&0\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    \cdot
+    \left(
+    \begin{bmatrix}
+    1&0&t_x\\[2pt]
+    0&1&t_y\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    \cdot
+    \begin{bmatrix}
+        a_1\\
+        a_2\\
+        1
+    \end{bmatrix}
+    \right)\\
+    &=
+    \begin{bmatrix}
+    k_x&0&0\\[2pt]
+    0&k_y&0\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    \cdot
+    \begin{bmatrix}
+    a_1 + t_x \\
+    a_2 + t_y \\
+    1
+    \end{bmatrix}
+    = \begin{bmatrix}
+        k_x \cdot (a_1 + t_x)\\[2pt]
+        k_y \cdot (a_2 + t_y)\\[2pt]
+        1
+    \end{bmatrix}\\
+    &\Rightarrow A' = (k_x \cdot (a_1 + t_x),\,k_y \cdot (a_2 + t_y)).
+\end{align*}"
+                displayMode={true}
+              />
+            </div>
+
+            <p className="mb-4">Второй способ вычисления:</p>
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{align*}
+    A' &= \left(T_2 \cdot T_1\right) \cdot A = \left(
+    \begin{bmatrix}
+    k_x&0&0\\[2pt]
+    0&k_y&0\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    \cdot
+    \begin{bmatrix}
+    1&0&t_x\\[2pt]
+    0&1&t_y\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    \right)
+    \cdot
+    \begin{bmatrix}
+        a_1\\
+        a_2\\
+        1
+    \end{bmatrix}
+    \\
+    &=
+    \begin{bmatrix}
+        k_x & 0 & k_x\cdot t_x\\[2pt]
+        0 & k_y & k_y \cdot t_y\\[2pt]
+        0 & 0 & 1
+    \end{bmatrix}
+    \cdot
+    \begin{bmatrix}
+        a_1\\
+        a_2\\
+        1
+    \end{bmatrix}
+    =   \begin{bmatrix}
+        k_x \cdot a_1 + k_x \cdot t_x\\
+        k_y \cdot a_2 + k_y \cdot t_y\\
+        1
+    \end{bmatrix}
+    \\
+    &\Rightarrow A' = (k_x \cdot (a_1 + t_x),\,k_y \cdot (a_2 + t_y)).
+\end{align*}"
+                displayMode={true}
+              />
+            </div>
+
+            <p className="mb-4">Таким образом мы просто показали, что порядок скобок не важен. Однако отметим, что порядок применения матриц преобразования важен. Если к вершинам геометрической фигуры сначала применить матрицу масштабирования, а затем поворота, то результатом будет поворот масштабированной фигуры. Если же поменять эти матрицы местами, но так как матрицы не коммутативны по умножению, то и результат такого преобразования будет совершенно другим.</p>
+
+            <p className="mb-4">Пример перестановок произведения двух матриц преобразования:</p>
+
+            <ol className="list-decimal mb-4 ml-6">
+              <li><div className="my-4">
+              <MathFormula 
+                formula="\begin{equation*}
+    \begin{bmatrix}
+    k_x&0&0\\[2pt]
+    0&k_y&0\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    \cdot
+    \begin{bmatrix}
+    1&0&t_x\\[2pt]
+    0&1&t_y\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        k_x & 0 & k_x\cdot t_x\\[2pt]
+        0 & k_y & k_y \cdot t_y\\[2pt]
+        0 & 0 & 1
+    \end{bmatrix}
+\end{equation*}"
+                displayMode={true}
+              />
+            </div></li>
+              <li><div className="my-4">
+              <MathFormula 
+                formula="\begin{equation*}
+    \begin{bmatrix}
+    1&0&t_x\\[2pt]
+    0&1&t_y\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    \cdot
+    \begin{bmatrix}
+    k_x&0&0\\[2pt]
+    0&k_y&0\\[2pt]
+    0&0&1
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        k_x & 0 & t_x\\[2pt]
+        0 & k_y & t_y\\[2pt]
+        0 & 0 & 1
+    \end{bmatrix}
+\end{equation*}"
+                displayMode={true}
+              />
+            </div></li>
+            </ol>
+
+            <LatexText className="mb-4">Применив разные результаты умножения матриц к точке $A = (a_1,\,a_2,\,1)$ получим:</LatexText>
+
+            <p className="mb-4">Масштабирование переноса:</p>
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{equation*}
+    A' = (k_x \cdot (a_1 + t_x),\,k_y \cdot (a_2 + t_y)).
+\end{equation*}"
+                displayMode={true}
+              />
+            </div>
+
+            <p className="mb-4">Перенос масштабирования:</p>
+
+            <div className="my-4">
+              <MathFormula 
+                formula="\begin{equation*}
+    A' = (k_x \cdot a_1 + t_x,\,k_y \cdot a_2 + t_y).
+\end{equation*}"
+                displayMode={true}
+              />
+            </div>
+
+            <p className="mb-4">Отсюда следует вывод, что последовательность матриц преобразований играет важную роль, так как нельзя взять и поменять матрицы местами, ожидая при этом получить такое же преобразование. При написании кода это стоит учитывать, так как неправильно заданная последовательность может привести к иному преобразованию, отличного от ожидаемого. </p>
+
+
+
+            
+
           </>
         );
 
