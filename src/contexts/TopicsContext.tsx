@@ -51,19 +51,19 @@ const initialTopics: Topic[] = [
 // Initial related topics
 const initialRelatedTopics: Record<string, RelatedTopic[]> = {
   'shaders': [
-    { id: 'shader-types', titleKey: 'vulkan', type: 'internal' },
+    { id: 'shader-types', titleKey: 'vulkan', type: 'external', url: 'https://docs.vulkan.org/spec/latest/index.html' },
     { id: 'glsl', titleKey: 'glsl', type: 'external', url: 'https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)' },
     { id: 'webgl', titleKey: 'webgl', type: 'external', url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API' }
   ],
   'transformation-matrices': [
-    { id: 'matrices', titleKey: 'matrices', type: 'internal' },
-    { id: 'vectors', titleKey: 'vectors', type: 'internal' },
-    { id: 'linear-transformations', titleKey: 'geogebraClassic', type: 'internal' } //titleKey was "linearTransformations"
+    { id: 'matrices', titleKey: 'matrices', type: 'external', url: 'http://mathprofi.ru/deistviya_s_matricami.html' },
+    { id: 'vectors', titleKey: 'vectors', type: 'external', url: 'http://mathprofi.ru/vektory_dlya_chainikov.html' },
+    { id: 'linear-transformations', titleKey: 'geogebraClassic', type: 'external', url: 'https://www.geogebra.org/m/sncrqsf6' } //titleKey was "linearTransformations"
   ],
   'color-theory': [
-    { id: 'rgb', titleKey: 'rgb', type: 'internal' },
-    { id: 'hsv', titleKey: 'hsv', type: 'internal' },
-    { id: 'color-spaces', titleKey: 'colorSpaces', type: 'external', url: 'https://en.wikipedia.org/wiki/Color_space' }
+    { id: 'rgb', titleKey: 'rgb', type: 'external', url: 'https://ru.wikipedia.org/wiki/RGB' },
+    { id: 'hsv', titleKey: 'hsv', type: 'external', url: 'https://ru.wikipedia.org/wiki/HSV_(%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C)' },
+    { id: 'color-spaces', titleKey: 'colorSpaces', type: 'external', url: 'https://habr.com/ru/articles/181580/' }
   ]
 };
 

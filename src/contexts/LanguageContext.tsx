@@ -54,6 +54,17 @@ const translations: Record<string, TranslationValues> = {
     
     colorTheoryTitle: 'Understanding Color Spaces',
     colorTheoryContent: 'Color theory explores how we perceive and represent colors in digital graphics. Understanding color spaces like RGB, HSV, and CMYK is essential.',
+
+
+    vulkan: 'Vulkan',
+    glsl: 'GLSL',
+    webgl: 'WebGL',
+    matrices: 'Matrices',
+    vectors: 'Vectors',
+    geogebraClassic: 'Interactive Matrices',
+    rgb: 'RGB',
+    hsv: 'HSV',
+    colorSpaces: 'Color Spaces',
   },
   ru: {
     topics: 'Темы',
@@ -82,6 +93,16 @@ const translations: Record<string, TranslationValues> = {
     
     colorTheoryTitle: 'Понимание цветовых пространств',
     colorTheoryContent: 'Теория цвета исследует то, как мы воспринимаем и представляем цвета в цифровой графике. Понимание цветовых пространств, таких как RGB, HSV и CMYK, является важным.',
+
+    vulkan: 'Vulkan',
+    glsl: 'GLSL',
+    webgl: 'WebGL',
+    matrices: 'Матрицы',
+    vectors: 'Векторы',
+    geogebraClassic: 'Интерактивные Матрицы',
+    rgb: 'RGB',
+    hsv: 'HSV',
+    colorSpaces: 'Цветовые Пространства',
   }
 };
 
