@@ -348,7 +348,6 @@ void main(){
             </p>
             
 
-
             <div className="my-4">
               <MathFormula 
                 formula="\begin{equation*}
