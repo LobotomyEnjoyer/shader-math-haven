@@ -88,11 +88,11 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
       </div>
       
       {/* Thin line when collapsed */}
-      <div 
+      {/* <div 
         className={`absolute top-0 left-0 h-full w-1 bg-magenta transition-opacity duration-300 ${
           isHovered ? 'opacity-0' : 'opacity-0'
         }`}
-      />
+      /> */}
     </div>
   );
 };
