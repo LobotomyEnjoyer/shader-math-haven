@@ -90,7 +90,7 @@ const NavigationPanel: React.FC<NavigationPanelProps> = ({ onAddTopic }) => {
       {/* Thin line when collapsed */}
       <div 
         className={`absolute top-0 left-0 h-full w-1 bg-magenta transition-opacity duration-300 ${
-          isHovered ? 'opacity-0' : 'opacity-100'
+          isHovered ? 'opacity-0' : 'opacity-0'
         }`}
       />
     </div>
