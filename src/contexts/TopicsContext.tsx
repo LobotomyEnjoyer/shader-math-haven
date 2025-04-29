@@ -54,7 +54,8 @@ const initialRelatedTopics: Record<string, RelatedTopic[]> = {
     { id: 'vulkan', titleKey: 'vulkan', type: 'external', url: 'https://docs.vulkan.org/spec/latest/index.html' },
     { id: 'glsl', titleKey: 'glsl', type: 'external', url: 'https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)' },
     { id: 'webgl', titleKey: 'webgl', type: 'external', url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API' },
-    { id: 'eglsl', titleKey: 'glsl_editor', type: 'external', url: 'https://thebookofshaders.com/edit.php' }
+    { id: 'eglsl', titleKey: 'glsl_editor', type: 'external', url: 'https://thebookofshaders.com/edit.php' },
+    { id: 'stoy', titleKey: 'shadtoy', type: 'external', url: 'https://www.shadertoy.com/' }
   ],
   'transformation-matrices': [
     { id: 'matrices', titleKey: 'matrices', type: 'external', url: 'http://mathprofi.ru/deistviya_s_matricami.html' },

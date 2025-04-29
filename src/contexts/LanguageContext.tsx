@@ -70,6 +70,7 @@ const translations: Record<string, TranslationValues> = {
     xyz: 'XYZ',
     lab: 'L*a*b',
     hsl: 'HSL',
+    shadtoy: 'ShaderToy',
   },
   ru: {
     topics: 'Темы',
@@ -113,6 +114,7 @@ const translations: Record<string, TranslationValues> = {
     xyz: 'XYZ',
     lab: 'L*a*b',
     hsl: 'HSL',
+    shadtoy: 'ShaderToy',
   }
 };
 
