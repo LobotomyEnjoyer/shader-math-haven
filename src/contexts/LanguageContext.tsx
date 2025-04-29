@@ -67,6 +67,9 @@ const translations: Record<string, TranslationValues> = {
     colorSpaces: 'Color Spaces',
     glsl_editor: 'GLSL Online Editor',
     cmyk: 'CMYK',
+    xyz: 'XYZ',
+    lab: 'L*a*b',
+    hsl: 'HSL',
   },
   ru: {
     topics: 'Темы',
@@ -107,6 +110,9 @@ const translations: Record<string, TranslationValues> = {
     colorSpaces: 'Цветовые Пространства',
     glsl_editor: 'Онлайн Редактор GLSL',
     cmyk: 'CMYK',
+    xyz: 'XYZ',
+    lab: 'L*a*b',
+    hsl: 'HSL',
   }
 };
 

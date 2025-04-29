@@ -65,6 +65,9 @@ const initialRelatedTopics: Record<string, RelatedTopic[]> = {
     { id: 'rgb', titleKey: 'rgb', type: 'external', url: 'https://ru.wikipedia.org/wiki/RGB' },
     { id: 'cmyk', titleKey: 'cmyk', type: 'external', url: 'https://ru.wikipedia.org/wiki/CMYK' },
     { id: 'hsv', titleKey: 'hsv', type: 'external', url: 'https://ru.wikipedia.org/wiki/HSV_(%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C)' },
+    { id: 'xyz', titleKey: 'xyz', type: 'external', url: 'https://ru.wikipedia.org/wiki/%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C' },
+    { id: 'lab', titleKey: 'lab', type: 'external', url: 'https://ru.wikipedia.org/wiki/LAB' },
+    { id: 'hsl', titleKey: 'hsl', type: 'external', url: 'https://ru.wikipedia.org/wiki/HSL#:~:text=HSL%2C%20HLS%20%D0%B8%D0%BB%D0%B8%20HSI%20(%D0%BE%D1%82,%2C%20%D1%87%D1%82%D0%BE%20%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%BE%D1%82%20%D1%8F%D1%80%D0%BA%D0%BE%D1%81%D1%82%D0%B8).' },
     { id: 'color-spaces', titleKey: 'colorSpaces', type: 'external', url: 'https://habr.com/ru/articles/181580/' }
   ]
 };
