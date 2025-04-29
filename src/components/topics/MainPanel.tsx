@@ -398,8 +398,8 @@ void main(){
                 formula="\begin{equation*}
     A' =
     \begin{bmatrix}
-        \frac{a_1'}{a_3'} \\[8pt]
-        \frac{a_2'}{a_3'} \\[8pt]
+        \frac{a_1'}{a_3'} \\[7pt]
+        \frac{a_2'}{a_3'} \\[7pt]
         1
     \end{bmatrix}
     =
