@@ -58,7 +58,7 @@ const initialRelatedTopics: Record<string, RelatedTopic[]> = {
   'transformation-matrices': [
     { id: 'matrices', titleKey: 'matrices', type: 'external', url: 'http://mathprofi.ru/deistviya_s_matricami.html' },
     { id: 'vectors', titleKey: 'vectors', type: 'external', url: 'http://mathprofi.ru/vektory_dlya_chainikov.html' },
-    { id: 'linear-transformations', titleKey: 'geogebraClassic', type: 'external', url: 'https://www.geogebra.org/m/sncrqsf6' } //titleKey was "linearTransformations"
+    { id: 'linear-transformations', titleKey: 'geogebraClassic', type: 'external', url: 'https://www.geogebra.org/m/eheazpw8' } //titleKey was "linearTransformations"
   ],
   'color-theory': [
     { id: 'rgb', titleKey: 'rgb', type: 'external', url: 'https://ru.wikipedia.org/wiki/RGB' },
