@@ -64,6 +64,7 @@ const initialRelatedTopics: Record<string, RelatedTopic[]> = {
   'color-theory': [
     { id: 'rgb', titleKey: 'rgb', type: 'external', url: 'https://ru.wikipedia.org/wiki/RGB' },
     { id: 'hsv', titleKey: 'hsv', type: 'external', url: 'https://ru.wikipedia.org/wiki/HSV_(%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C)' },
+    { id: 'cmyk', titleKey: 'cmyk', type: 'external', url: 'https://ru.wikipedia.org/wiki/CMYK' },
     { id: 'color-spaces', titleKey: 'colorSpaces', type: 'external', url: 'https://habr.com/ru/articles/181580/' }
   ]
 };
