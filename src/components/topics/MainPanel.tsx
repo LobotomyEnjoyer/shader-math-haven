@@ -398,14 +398,14 @@ void main(){
                 formula="\begin{equation*}
     A' =
     \begin{bmatrix}
-        \frac{a_1'}{a_3'} \\[6pt]
-        \frac{a_2'}{a_3'} \\[6pt]
+        \frac{a_1'}{a_3'} \\[8pt]
+        \frac{a_2'}{a_3'} \\[8pt]
         1
     \end{bmatrix}
     =
     \begin{bmatrix}
-        \frac{x_1\cdot a_1 + y_1\cdot a_2 + t_1}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[6pt]
-        \frac{x_2\cdot a_1 + y_2\cdot a_2 + t_2}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[6pt]
+        \frac{x_1\cdot a_1 + y_1\cdot a_2 + t_1}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[8pt]
+        \frac{x_2\cdot a_1 + y_2\cdot a_2 + t_2}{x_3\cdot a_1 + y_3\cdot a_2 + t_3} \\[8pt]
         1
     \end{bmatrix}
 \end{equation*}"
