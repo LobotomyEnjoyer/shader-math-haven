@@ -773,7 +773,7 @@ void main(){
             
             <figure>
             <img
-            src = "src/imgs/RGB-color-model.jpg"
+            src = "public/RGB-color-model.jpg"
             alt="RGB"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Круги RGB и их пересечения</figcaption>
@@ -800,7 +800,7 @@ void main(){
             
             <figure>
             <img
-            src = "src/imgs/CMYK.png"
+            src = "public/CMYK.png"
             alt="CMYK"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Графическая интерпретация CMYK</figcaption>
@@ -809,7 +809,7 @@ void main(){
 
             <figure>
             <img
-            src = "src/imgs/CMYK_bef_opti.png"
+            src = "public/CMYK_bef_opti.png"
             alt="CMYK_bef"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Значения CMYK до оптимизации</figcaption>
@@ -818,7 +818,7 @@ void main(){
 
             <figure>
             <img
-            src = "src/imgs/CMYK_after_opti.png"
+            src = "public/CMYK_after_opti.png"
             alt="CMYK_after"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Значения CMYK после оптимизации</figcaption>
@@ -843,7 +843,7 @@ void main(){
             
             <figure>
             <img
-            src = "src/imgs/HSB_cylinder.jpg"
+            src = "public/HSB_cylinder.jpg"
             alt="HSB_cyl"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Графическая интерпретация HSV (HSB) в виде цилиндра</figcaption>
@@ -852,7 +852,7 @@ void main(){
 
             <figure>
             <img
-            src = "src/imgs/HSV_cone.png"
+            src = "public/HSV_cone.png"
             alt="HSV_cone"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Графическая интерпретация HSV (HSB) в виде конуса</figcaption>
@@ -861,7 +861,7 @@ void main(){
 
             <figure>
             <img
-            src = "src/imgs/Triangulo_HSV.png"
+            src = "public/Triangulo_HSV.png"
             alt="Triangulo_HSV"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Цветовой круг модели HSV (HSB)</figcaption>
