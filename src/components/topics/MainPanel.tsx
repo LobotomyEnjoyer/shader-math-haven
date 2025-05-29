@@ -833,8 +833,6 @@ void main(){
 
 
 
-
-
             <h2 className="text-2xl font-bold mb-4">{'HSV (HSB)'}</h2>
 
             <LatexText className="mb-4">
