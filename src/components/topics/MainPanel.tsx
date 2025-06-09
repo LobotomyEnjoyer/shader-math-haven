@@ -773,7 +773,7 @@ void main(){
             
             <figure>
             <img
-            src = "https://github.com/LobotomyEnjoyer/shader-math-haven/blob/main/src/imgs/RGB-color-model.jpg?raw=true"
+            src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Venn_diagram_rgb.svg/1920px-Venn_diagram_rgb.svg.png"
             alt="RGB"
             className="w-full max-w-2xl h-auto rounded-lg shadow-md my-4"></img>
             <figcaption>Круги RGB и их пересечения</figcaption>
